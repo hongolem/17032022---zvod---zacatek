@@ -8,6 +8,7 @@ stop = 2
 
 def on_light_drop():
     radio.send_number(start)
+    music.play_tone(Note.C, music.beat(100))
 RunComp.on_light_drop(on_light_drop)
 
 def on_button_pressed_a():
